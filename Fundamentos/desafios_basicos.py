@@ -35,3 +35,20 @@ print(f"O dobro da area é igual a {da}")
 c = float(input("Digite a temperatura em Cº"))
 f = (c*1.8)+32
 print(f"A temperatura em ºF é {f}")
+
+# Calcule o salário mensal multiplicando horas trabalhadas por valor da hora.
+ht = float(input("Digite quantas horas você trabalha: "))
+vh = float(input("Digite o valor da hora trabalhada: "))
+salMensal = ht*vh
+print(f"Seu salario mensal é de: {salMensal:.2f}")
+
+# Peça um número e mostre o antecessor e o sucessor.
+num = int(input("Digite um número: "))
+ant = num - 1
+suc = num + 1
+print(f"O antecessor de {num} é: {ant} \nO sucessor de {num} é: {suc}")
+
+#Peça o nome e idade e exiba “Fulano tem X anos”.
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+print(f"{nome} tem {idade} anos")
