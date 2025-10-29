@@ -75,3 +75,30 @@ elif(idade>=22 and idade<=60):
     print("Você é adulto")
 else:
     print("Você é idoso")
+
+# Verifique se um triângulo é equilátero, isósceles ou escaleno.
+lado1 = float(input("Digite um lado do triangulo: "))
+lado2 = float(input("Digite outro lado do triangulo: "))
+lado3 = float(input("Digite mais um lado do triangulo: "))
+if (lado1 + lado2 > lado3) and (lado1 + lado3 > lado2) and (lado2 + lado3 > lado1):
+    if(lado1==lado2==lado3):
+        print("O trinagulo é equilatero")
+    elif(lado1==lado2!=lado3 or lado1!=lado2==lado3 or lado1==lado3!=lado2):
+        print("O triangulo é isosceles")
+    else:
+        print("O triangulo é escaleno")
+else:
+    print("Os valores não formam um triangulo")
+
+# Calcule o valor do IMC e classifique (baixo peso, normal, sobrepeso, etc.).
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura: "))
+imc = peso/(altura*altura)
+if(imc<=18.5):
+    print("Baixo peso")
+elif(imc>18.5 and imc<=24.9):
+    print("Peso normal")
+elif(imc>=25 and imc<29.9):
+    print("Sobrepeso")
+else:
+    print("Obesidade")
